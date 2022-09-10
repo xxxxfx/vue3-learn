@@ -1,0 +1,19 @@
+{
+  "name": "diff-and-dom",
+  "version": "1.0.0",
+  "description": "真正的dom转换为虚拟对象，包含了三个属性  <div class = 'box'>  <h3>hello </h3>  </div>  # 虚拟dom  {    sel: 'div' // 选择器    data:  {      class: {box: true}    }    children: [      sel: 'h3',      data: {},      text: 'hello'    ]",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.74.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.3"
+  },
+  "dependencies": {
+    "snabbdom": "^3.5.1"
+  }
+}
